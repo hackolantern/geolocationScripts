@@ -6,13 +6,16 @@ import shapefile
 __author__ = 'timothy'
 
 class Location:
-    name = None
+    sename = None
     address = None
 
     lat = None
     long = None
 
-    attributes = {}
+    attributes = None
+
+    def __init__(self):
+        self.attributes = {}
 
     def isValidLatLong(self):
         return self.lat is not None and \
