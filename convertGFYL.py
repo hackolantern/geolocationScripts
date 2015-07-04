@@ -18,6 +18,7 @@ class LocationInfo:
     lat = None
     long = None
 
+
     @classmethod
     def fromGFYLRow(cls, row):
         returned = LocationInfo()
@@ -31,8 +32,16 @@ class LocationInfo:
 
         return returned
 
+
     def addressString(self):
         return self.streetAddress + ' ' + self.suburb + ' ' + self.state
+
+
+    def isValidLatLong(self):
+        return self.lat is not None and \
+               self.long is not None and \
+               112.85 <= self.long <= 153.69 and \
+               -43.7 <= self.lat <= -9.86
 
 
 def getGFYLDataFiles():
@@ -46,7 +55,9 @@ def getGFYLDataFiles():
 
 
 def locationInfosFromGFYLDataFile(dataFile):
-    handle = open('csvData/' + dataFile, newline='')
+    print('Reading file ' + dataFile)
+
+    handle = open('csvData/' + dataFile, newline='', encoding='utf-8')
     reader = csv.DictReader(handle, ['Name','Address','Suburb','Postcode','State','Business Category','LGA','Region'])
 
     locationInfos = []
@@ -126,12 +137,12 @@ def writeToShapeFile(locationInfos, fileName):
     writer.field('Category', 'C', '100')
 
     for locationInfo in locationInfos:
-        if (locationInfo.lat is not None and locationInfo.long is not None):
+        if (locationInfo.isValidLatLong()):
             writer.point(locationInfo.long, locationInfo.lat)
             writer.record(locationInfo.name, locationInfo.addressString(), locationInfo.category)
         else:
             print('Ignoring location \'' + locationInfo.name + '\' at \'' + locationInfo.addressString() +
-                  '\' because no lat/long could be found for it')
+                  '\' with spurious lat/long ' + str(locationInfo.lat) + ',' + str(locationInfo.long))
 
     writer.save('shapeFiles/' + fileName)
 
@@ -142,13 +153,9 @@ if __name__ == "__main__":
 
     locationInfos = []
 
-    # TODO do this for everything
-
-    locationInfos.extend(locationInfosFromGFYLDataFile(datafiles[0]))
-
-    # print('Loading information from GFYLFiles')
-    # for dataFile in datafiles:
-    #     locationInfos.append(locationInfosFromGFYLDataFile(dataFile))
+    print('Loading information from GFYLFiles')
+    for dataFile in datafiles:
+        locationInfos.extend(locationInfosFromGFYLDataFile(dataFile))
 
     print('Adding latitudes and longitudes to location information')
     addLatLongs(locationInfos)
