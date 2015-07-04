@@ -1,0 +1,49 @@
+Zone,Station No.,Address,Fire Appliances
+Central Zone,1,"456 Albert Street, East Melbourne, 3002","Mk5 and Mk4 Pumper, Comb Ladder, Ladder Platform, Ultra Large Pump, Control Unit"
+Central Zone,2,"60 Batman Street, West Melbourne, 3003",Mk5 and Mk3 Pumper
+Central Zone,3,"106 Bouverie Street, Carlton, 3053","Mk3 Pumper, Heavy Rescue"
+Central Zone,10,"55 Church Street, Richmond, 3121","Mk4 Pumper, Teleboom, Modular Transporters"
+Central Zone,18,"45 William Street, Hawthorn, 3122",Mk5 Pumper
+Central Zone,35,"156 Albert Street, Windsor, 3181","Mk5 Pumper, Comb Ladder, Ladder Platform"
+Central Zone,38,"26 Moray Street, South Melbourne, 3205","Mk5 and Mk3 Pumper, Ladder Platform, Breathing Apparatus"
+Central Zone,39,"425 Williamstown Rd, Port Melbourne, 3207",Mk3 Pumper
+Northern Zone,4,"24 Blyth Street, Brunswick, 3056",Mk4 Pumper
+Northern Zone,5,"338 Camp Road, Broadmeadows, 3047","Pumper Tanker, Water Tanker"
+Northern Zone,6,"345a Gaffney Street, Pascoe Vale, 3044",Mk3 Pumper
+Northern Zone,7,"92 Mahoneys Road, Thomastown, 3074","Mk5 Pumper, Heavy Rescue, Teleboom "
+Northern Zone,9,"10 Somerton Park Drive, Campbellfield, 3061",Pumper Tanker
+Northern Zone,11,"28 Childs Road, Epping, 3076",Pumper Tanker
+Northern Zone,12,"471 Bell Street, Preston, 3072",Mk5 Pumper
+Northern Zone,13,"3 Mitchell Street, Northcote, 3070",Mk3 Pumper
+Northern Zone,14,"1083 Plenty Road, Bundoora, 3083","Mk5 Pumper, Water Tanker "
+Northern Zone,15,"161 Bell Street, Heidelberg, 3084",Mk4 Pumper
+Northern Zone,16,"141 Grimshaw Street, Greensborough, 3088",Pumper Tanker
+Northern Zone,19,"312 Doncaster Road, North Balwyn, 3104",Pumper Tanker
+Northern Zone,30,"178 Foote Street, Templestowe, 3106","Mk3 Pumper, Water Tanker"
+Southern Zone ,20,"1052 Maroondah Highway, Box Hill, 3128",Mk5 Pumper
+Southern Zone ,22,"272 Maroondah Highway, Ringwood, 3134","Pumper Tanker, Teleboom"
+Southern Zone ,23,"25 Highbury Road, Burwood, 3125","Mk4 Pumper, Hydraulic Platform"
+Southern Zone ,24,"80 Waverley Road, East Malvern, 3145",Mk5 Pumper
+Southern Zone ,25,"100 Atherton Road, Oakleigh, 3166","Mk4 Pumper, Heavy Rescue, Teleboom"
+Southern Zone ,26,"14a Croydon Road, Croydon, 3136","Mk3 Pumper, Water Tanker"
+Southern Zone ,27,"364 Maroondah Highway, Nunawading, 3131","Pumper Tanker, Heavy Rescue"
+Southern Zone ,28,"721 Highbury Road, Vermont South, 3133",Pumper Tanker
+Southern Zone ,29,"529 Clayton Road, Clayton, 3169",Pumper Tanker
+Southern Zone ,31,"645 Ferntree Gully Road, Wheelers Hill, 3150","Mk3 Pumper, Water Tanker "
+Southern Zone ,32,"311 North Road, South Caulfield, 3162",Mk4 Pumper
+Southern Zone ,33,"103 Nepean Highway, Mentone, 3194",Pumper Tanker
+Southern Zone ,34,"150 Wickham Road, Highett, 3190","Mk3 Pumper, Water Tanker "
+Western Zone ,40,"75 Railway Avenue, Laverton, 3028",Pumper Tanker
+Western Zone ,41,"9 Taylors Road, St Albans, 3021",Pumper Tanker
+Western Zone ,42,"231 Melbourne Road, Newport, 3015","Mk4 Pumper, Ultra Large Pump"
+Western Zone ,43,"782 Ballarat Road, Deer Park, 3023","Mk5 Pumper, Water Tanker"
+Western Zone ,44,"30 McIntyre Road, Sunshine, 3020","Mk5 Pumper, Heavy Rescue, Teleboom"
+Western Zone ,45,"8 Highgate Street, Spotswood, 3015",Mk3 Pumper
+Western Zone ,46,"7 Akuna Street, Altona, 3018",Pumper Tanker
+Western Zone ,47,"69 Droop Street, Footscray, 3011","Mk4 Pumper, Ladder Platform, Modular Transporters"
+Western Zone ,48,"470 Melton Hwy, Taylors Lakes, 3038",Pumper Tanker
+Western Zone ,49,"Cnr Boundary & Fairbairn Road,",Pumper Tanker
+Western Zone ,,"Nth Laverton, 3026",
+Western Zone ,50,"258 Union Road, Moonee Ponds, 3039",Mk3 Pumper
+Western Zone ,51,"145 Milleara Road, East Keilor, 3033","Mk3 Pumper, Water Tanker "
+Western Zone ,52,"1 Western Avenue, Tullamarine, 3043",Pumper Tanker 
