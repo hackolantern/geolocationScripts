@@ -51,20 +51,20 @@ def locationFromRow(row):
 
     returned.attributes['Cost'] = row['Cost']
     returned.attributes['Bookings'] = row['Bookings']
-    returned.attributes['Opening_Hours_Mon_Open'] = row['Opening_Hours_Mon_Open']
-    returned.attributes['Opening_Hours_Mon_Close'] = row['Opening_Hours_Mon_Close']
-    returned.attributes['Opening_Hours_Tue_Open'] = row['Opening_Hours_Tue_Open']
-    returned.attributes['Opening_Hours_Tue_Close'] = row['Opening_Hours_Tue_Close']
-    returned.attributes['Opening_Hours_Wen_Open'] = row['Opening_Hours_Wen_Open']
-    returned.attributes['Opening_Hours_Wen_Close'] = row['Opening_Hours_Wen_Close']
-    returned.attributes['Opening_Hours_Thu_Open'] = row['Opening_Hours_Thu_Open']
-    returned.attributes['Opening_Hours_Thu_Close'] = row['Opening_Hours_Thu_Close']
-    returned.attributes['Opening_Hours_Fri_Open'] = row['Opening_Hours_Fri_Open']
-    returned.attributes['Opening_Hours_Fri_Close'] = row['Opening_Hours_Fri_Close']
-    returned.attributes['Opening_Hours_Sat_Open'] = row['Opening_Hours_Sat_Open']
-    returned.attributes['Opening_Hours_Sat_Close'] = row['Opening_Hours_Sat_Close']
-    returned.attributes['Opening_Hours_Sun_Open'] = row['Opening_Hours_Sun_Open']
-    returned.attributes['Opening_Hours_Sun_Close'] = row['Opening_Hours_Sun_Close']
+    returned.attributes['Mon_Open_Time'] = row['Opening_Hours_Mon_Open']
+    returned.attributes['Mon_Close_Time'] = row['Opening_Hours_Mon_Close']
+    returned.attributes['Tue_Open_Time'] = row['Opening_Hours_Tue_Open']
+    returned.attributes['Tue_Close_Time'] = row['Opening_Hours_Tue_Close']
+    returned.attributes['Wen_Open_Time'] = row['Opening_Hours_Wen_Open']
+    returned.attributes['Wen_Close_Time'] = row['Opening_Hours_Wen_Close']
+    returned.attributes['Thu_Open_Time'] = row['Opening_Hours_Thu_Open']
+    returned.attributes['Thu_Close_Time'] = row['Opening_Hours_Thu_Close']
+    returned.attributes['Fri_Open_Time'] = row['Opening_Hours_Fri_Open']
+    returned.attributes['Fri_Close_Time'] = row['Opening_Hours_Fri_Close']
+    returned.attributes['Sat_Open_Time'] = row['Opening_Hours_Sat_Open']
+    returned.attributes['Sat_Close_Time'] = row['Opening_Hours_Sat_Close']
+    returned.attributes['Sun_Open_Time'] = row['Opening_Hours_Sun_Open']
+    returned.attributes['Sun_Close_Time'] = row['Opening_Hours_Sun_Close']
     returned.attributes['Num_Terminals'] = row['Num_Terminals']
     returned.attributes['Disability_Friendly_Terminals'] = row['Disability_Friendly_Terminals']
     returned.attributes['Printing_Available'] = row['Printing_Available']
@@ -101,11 +101,10 @@ if __name__ == "__main__":
 
     print('Writing to shapefile')
     locationsToShapefileConversion.writeToShapeFile(locations, 'Internet',
-        ['phone', 'category','Cost','Bookings','Opening_Hours_Mon_Open','Opening_Hours_Mon_Close',
-         'Opening_Hours_Tue_Open','Opening_Hours_Tue_Close','Opening_Hours_Wen_Open','Opening_Hours_Wen_Close',
-         'Opening_Hours_Thu_Open','Opening_Hours_Thu_Close','Opening_Hours_Fri_Open','Opening_Hours_Fri_Close',
-         'Opening_Hours_Sat_Open','Opening_Hours_Sat_Close','Opening_Hours_Sun_Open','Opening_Hours_Sun_Close',
-         'Num_Terminals','Disability_Friendly_Terminals','Printing_Available','Touch_Screen','Trackball',
-         'Large_Keyboard','Large_Monitor','Accessibility_Options','Speech_Synthesizer','Disability_Software',
-         'Documentation','Assistance','Multilingual_Staff','Multilingual_Access','Training','Wheelchair_Access',
-         'Funded','Environment','Adjustable Arm/Base','Adjustable Desk','Content Filtering','Food Kiosk'])
+        ['phone', 'category','Cost','Bookings','Mon_Open_Time','Mon_Close_Time','Tue_Open_Time','Tue_Close_Time',
+         'Wen_Open_Time','Wen_Close_Time','Thu_Open_Time','Thu_Close_Time','Fri_Open_Time','Fri_Close_Time',
+         'Sat_Open_Time','Sat_Close_Time','Sun_Open_Time','Sun_Close_Time','Num_Terminals',
+         'Disability_Friendly_Terminals','Printing_Available','Touch_Screen','Trackball','Large_Keyboard',
+         'Large_Monitor','Accessibility_Options','Speech_Synthesizer','Disability_Software','Documentation',
+         'Assistance','Multilingual_Staff','Multilingual_Access','Training','Wheelchair_Access','Funded','Environment',
+         'Adjustable Arm/Base','Adjustable Desk','Content Filtering','Food Kiosk'])
