@@ -66,7 +66,7 @@ def locationFromRow(row):
     returned.attributes['Sun_Open_Time'] = row['Opening_Hours_Sun_Open']
     returned.attributes['Sun_Close_Time'] = row['Opening_Hours_Sun_Close']
     returned.attributes['Num_Terminals'] = row['Num_Terminals']
-    returned.attributes['Disability_Friendly_Terminals'] = row['Disability_Friendly_Terminals']
+    returned.attributes['Friendly_Terminals_Disability'] = row['Disability_Friendly_Terminals']
     returned.attributes['Printing_Available'] = row['Printing_Available']
     returned.attributes['Touch_Screen'] = row['Touch_Screen']
     returned.attributes['Trackball'] = row['Trackball']
@@ -74,17 +74,17 @@ def locationFromRow(row):
     returned.attributes['Large_Monitor'] = row['Large_Monitor']
     returned.attributes['Accessibility_Options'] = row['Accessibility_Options']
     returned.attributes['Speech_Synthesizer'] = row['Speech_Synthesizer']
-    returned.attributes['Disability_Software'] = row['Disability_Software']
+    returned.attributes['Software_Disability'] = row['Disability_Software']
     returned.attributes['Documentation'] = row['Documentation']
     returned.attributes['Assistance'] = row['Assistance']
-    returned.attributes['Multilingual_Staff'] = row['Multilingual_Staff']
-    returned.attributes['Multilingual_Access'] = row['Multilingual_Access']
+    returned.attributes['Staff_Multilingual'] = row['Multilingual_Staff']
+    returned.attributes['Access_Multilingual'] = row['Multilingual_Access']
     returned.attributes['Training'] = row['Training']
     returned.attributes['Wheelchair_Access'] = row['Wheelchair_Access']
     returned.attributes['Funded'] = row['Funded']
     returned.attributes['Environment'] = row['Environment']
-    returned.attributes['Adjustable Arm/Base'] = row['Adjustable Arm/Base']
-    returned.attributes['Adjustable Desk'] = row['Adjustable Desk']
+    returned.attributes['Arm/Base Adjustable'] = row['Adjustable Arm/Base']
+    returned.attributes['Desk Adjustable'] = row['Adjustable Desk']
     returned.attributes['Content Filtering'] = row['Content Filtering']
     returned.attributes['Food Kiosk'] = row['Food Kiosk']
 
@@ -104,7 +104,7 @@ if __name__ == "__main__":
         ['phone', 'category','Cost','Bookings','Mon_Open_Time','Mon_Close_Time','Tue_Open_Time','Tue_Close_Time',
          'Wen_Open_Time','Wen_Close_Time','Thu_Open_Time','Thu_Close_Time','Fri_Open_Time','Fri_Close_Time',
          'Sat_Open_Time','Sat_Close_Time','Sun_Open_Time','Sun_Close_Time','Num_Terminals',
-         'Disability_Friendly_Terminals','Printing_Available','Touch_Screen','Trackball','Large_Keyboard',
-         'Large_Monitor','Accessibility_Options','Speech_Synthesizer','Disability_Software','Documentation',
-         'Assistance','Multilingual_Staff','Multilingual_Access','Training','Wheelchair_Access','Funded','Environment',
-         'Adjustable Arm/Base','Adjustable Desk','Content Filtering','Food Kiosk'])
+         'Friendly_Terminals_Disability','Printing_Available','Touch_Screen','Trackball','Large_Keyboard',
+         'Large_Monitor','Accessibility_Options','Speech_Synthesizer','Software_Disability','Documentation',
+         'Assistance','Staff_Multilingual','Access_Multilingual','Training','Wheelchair_Access','Funded','Environment',
+         'Arm/Base Adjustable','Desk Adjustable','Content Filtering','Food Kiosk'])
